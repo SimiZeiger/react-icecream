@@ -4,7 +4,7 @@ import './style.css'
 function IceCreamList(props) {
     const FlavorListItems = props.flavors.map((flavor, index) => {
         return(
-            <li key={index + 1}>{flavor.name}</li>
+            <li key={index + 1} className={flavor.name === 'Cookie Dough' ? 'pink' : 'aqua'}>{flavor.name}</li>
         )
     });
 
